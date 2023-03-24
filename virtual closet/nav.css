@@ -1,0 +1,141 @@
+
+body {
+    background-image: url(/img/pexels-frank-cone-3573555.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    z-index: -1;
+    backdrop-filter: blur(5px);
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 10px;
+    position: sticky;
+}
+
+.option {
+    height: 30px;
+    cursor: pointer;
+}
+
+.name {
+    height: 50px;
+}
+
+.logo {
+    height: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.menubox {
+    width: 100%;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    position: absolute;
+    z-index: 1;
+}
+
+.menubox.dropdown {
+    max-height: 400px;
+}
+
+.menuItems {
+    background-color: black;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    font-size: 18px;
+}
+
+.menuItems hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #10657a;
+}
+
+.items:hover p {
+    font-weight: 600;
+    transform: translateX(5px);
+    color: rgb(91, 91, 235);
+}
+
+.items span {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.create:hover,.upload:hover {
+    cursor: pointer;
+    background-color: #536463;
+}
+
+.create {
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+}
+
+.upload {
+    margin-right: 10px;
+    margin-top: 10px;
+    float: right;
+}
+
+.upload {
+    background-color: #312e2e;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    box-shadow: #5a5856 4px 4px 0 0;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.create {
+    background-color: #333232;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    box-shadow: #444141 -2px 3px 0px 2px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button {
+    position: relative;
+    width: 100%;
+    backdrop-filter: blur(1px);
+    padding: 10px 5px 70px;
+}

@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.galleryBox {
+    display: flex;
+    position: relative;
+    width: 95%;
+    border: #ffffff;
+    border-width: 2px;
+    border-style: solid;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.closet1 {
+    padding: 10px 20px;
+    justify-content: center;
+    align-self: center;
+}
+
+.closet1 ul {
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+}
+
+.closet1 ul li {
+    padding: 3px;
+    text-align: center;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+}
+
+.closet1 img {
+    width: 350px;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+}
+
+.arrow img {
+    height: 100px;
+}
+
+.clothes {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.clothes img {
+    height: 200px;
+    background-color: #ffffff;
+}
+
+.krsna1a ul {
+    list-style-type: none;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+
+.krsna1a {
+    display: flex;
+    margin: 30px;
+    flex-direction: column;
+}
+
+.krsna1b {
+    display: flex;
+    flex-direction: column;
+}
+
+.krsna1b ul {
+    color: #fffdfd;
+    background-color: #000000;
+    list-style-type: none;
+}
+
+.about {
+    background-color: #4e504c;
+    display: flex;
+    position: relative;
+    color: #fffdfd;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.about a:hover {
+    color: rgb(31, 59, 216);
+    font-weight: 800;
+}
+
+.about span {
+    font-weight: 700;
+}
+
+.about img {
+    margin-left: 30px;
+    padding: 5px;
+}
+
+@media screen and (max-width:810px) {
+    .galleryBox{
+        display: flex;
+        flex-direction: column;
+    }
+    .closet1 {
+        padding: 0;
+    }
+    .arrow img {
+        transform: rotate(90deg);
+    }
+}
